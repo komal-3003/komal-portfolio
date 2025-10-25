@@ -30,26 +30,6 @@
     -moz-osx-font-smoothing:grayscale;
     line-height:1.5;
   }
-.soft-skills-languages {
-  margin-top: 20px;
-}
-
-.soft-skills-languages h2 {
-  margin-bottom: 12px;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-
-.soft-skills-languages h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40%;
-  height: 2px;
-  background: linear-gradient(90deg, #4cafef, transparent);
-}
 
 .soft-section {
   display: flex;
@@ -71,52 +51,6 @@
 
 .soft-card:hover {
   transform: translateY(-4px);
-}
-
-.lang-section {
-  display: flex;
-  gap: 20px;
-}
-
-.lang-card {
-  flex: 1;
-  text-align: center;
-  background: #ffffff0d;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.lang-card:hover {
-  transform: scale(1.05);
-}
-
-.lang-card h4 {
-  margin: 0;
-  font-size: 15px;
-  color: #4cafef;
-}
-
-.lang-card p {
-  margin: 4px 0 0;
-  font-size: 13px;
-  color: #555;
-}
-
-
-  .skill-fill {
-  position: relative; /* so percentage can sit inside */
-}
-
-.skill-percent {
-  position: absolute;
-  right: 6px;         /* push text to the right inside bar */
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 12px;    /* smaller font so it fits */
-  color: #fff;        /* visible on dark fill */
-  font-weight: bold;
 }
 
   /* Layout container */
@@ -407,7 +341,7 @@
 }
 
 .skills-grid .card {
-  background: #111;
+  background: transparent;
   border-radius: 15px;
   padding: 25px;
   width: 130px;
@@ -891,5 +825,6 @@ document.querySelectorAll("a").forEach(a => {
 </script>
 </body>
 </html>
+
 
 
