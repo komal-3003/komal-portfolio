@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Komal Anand</title>
+<title>[Your Name] — Portfolio</title>
 
 <!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -392,6 +392,50 @@
   .skill-name{font-weight:700}
   .skill-track{height:8px;background:#0b1a24;border-radius:6px;overflow:hidden;width:60%}
   .skill-fill{height:100%;width:0;background:linear-gradient(90deg,var(--accent), #ee570b9a);transition:width 1.2s ease}
+
+.skills-grid {
+  padding: 80px 40px;
+  background: transparent;
+  text-align: center;
+}
+
+.skills-grid .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.skills-grid .card {
+  background: #111;
+  border-radius: 15px;
+  padding: 25px;
+  width: 130px;
+  transition: 0.4s;
+  box-shadow: 0 0 10px #111;
+}
+
+.skills-grid .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #ff562290, 0 0 40px #ff9900c3;
+}
+
+.skills-grid img {
+  width: 60px;
+  height: 60px;
+}
+
+.skills-grid p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.proj-body p{
+  text-align: justify;
+}
+  
 </style>
 </head>
 <body>
@@ -560,7 +604,7 @@ document.querySelector(".tab.active").click();
 </script>
     <aside class="hero-right fade-up" style="transition-delay:.2s">
     <div class="profile-photo">
-      <img src="ammi.jpeg" alt="Photo">
+      <img src="assets/ammi.jpeg" alt="Photo">
       
     </div>
 </aside>
@@ -572,7 +616,7 @@ document.querySelector(".tab.active").click();
   <section id="about" class="fade-up" style="margin-top:8px;padding-top:30px">
     <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap">
       <div style="flex:1;min-width:260px">
-        <h2>About Me</h2>
+        <h2 class="section-title"><center>PROFILE</center></h2>
         <p class="small" style="color:var(--muted);max-width:306ch; text-align: justify;">I’m a passionate Web Developer who enjoys turning ideas into clean, functional, and user-friendly digital experiences. I specialize in crafting responsive websites and interactive web applications with a focus on usability, performance, and modern design practices.
 
 Over time, I’ve worked on admin panels, booking systems, membership modules, and user dashboards, gaining experience in both frontend design and backend integration. I also explore DSA, and SAP fundamentals to continuously improve my problem-solving and technical skills.
@@ -581,191 +625,28 @@ Beyond code, I enjoy collaborating with teams, guiding peers, and contributing t
 
 </p>
 
-        <div style="margin-top:18px"> 
-            <h2 style="margin:8px 0">Skills</h2>
 
-            <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
-                <div class="skill-row">
-                <div class="skill-name">HTML / CSS</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="95"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-                <div class="skill-row">
-                <div class="skill-name">JavaScript</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="85"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-                <div class="skill-row">
-                <div class="skill-name">Java</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="58"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-                <div class="skill-row">
-                <div class="skill-name">Figma</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="82"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-                <div class="skill-row">
-                <div class="skill-name">SQL</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="82"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-                <div class="skill-row">
-                <div class="skill-name">PHP</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="88"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-                <div class="skill-row">
-                <div class="skill-name">Git</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="75"><span class="skill-percent"></span></div>
-                </div>
-                </div>
+      <section id="skills" class="skills-grid">
+  <h2 class="section-title">SKILLS & TOOLS</h2>
+  <div class="grid">
+    <div class="card"><img src="assets/html5.png"><p>HTML5</p></div>
+    <div class="card"><img src="assets/text.png"><p>CSS3</p></div>
+    <div class="card"><img src="assets/java-script.png"><p>JavaScript</p></div>
+    <div class="card"><img src="assets/social.png"><p>Git</p></div>
+    <div class="card"><img src="assets/php.png"><p>PHP</p></div>
+     <div class="card"><img src="assets/mysql-database.png"><p>MySQL</p></div>
+     <div class="card"><img src="assets/java.png"><p>Java</p></div>
+     <div class="card"><img src="assets/figma.png"><p>Figma</p></div>
 
-                <div class="skill-row">
-                <div class="skill-name">Springboot</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="65"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-
-                <div class="skill-row">
-                <div class="skill-name">Bootstrap</div>
-                <div class="skill-track">
-                    <div class="skill-fill" data-val="70"><span class="skill-percent"></span></div>
-                </div>
-                </div>
-            </div>
-
-            <div class="soft-skills-languages">
-  <h2>Soft Skills & Languages</h2>
-
-  <!-- Soft Skills -->
-  <div class="soft-section">
-    <div class="soft-card">Problem Solving</div>
-    <div class="soft-card">Team Collaboration</div>
-    <div class="soft-card">Time Management</div>
-    <div class="soft-card">Leadership</div>
-    <div class="soft-card">Content Management</div>
   </div>
-
- 
-</div>
+</section>
 
 
-      </div>
-
-      <script>
-      document.addEventListener("DOMContentLoaded", () => {
-  const skills = document.querySelectorAll(".skill-fill");
-
-  skills.forEach(skill => {
-    const val = parseInt(skill.getAttribute("data-val"), 10);
-    let width = 0;
-
-    const percentText = skill.querySelector(".skill-percent");
-
-    const interval = setInterval(() => {
-      if (width >= val) {
-        clearInterval(interval);
-      } else {
-        width++;
-        skill.style.width = width + "%";
-        percentText.textContent = width + "%";
-      }
-    }, 15); // speed of animation
-  });
-});
-</script>
-
-      <!-- Experience / Case Studies -->
-      <div class="case-studies">
-        <h2>Case Studies</h2>
-        <div class="exp-list">
-            <div class="exp-item">
-            <div class="exp-head" data-toggle>
-                <div>
-                <h4>Salon Website Development</h4>
-                <small class="small" style="color:var(--muted)">Lead Developer</small>
-                </div>
-            </div>
-            <div class="exp-body">
-                <p Style="text-align:justify;"><b>Responsibilities:</b><br>
-
-Built a complete website for a salon, including both user panel and admin panel.
-
-Designed the frontend with a responsive and modern layout.<br>
-
-<b>Developed custom features:</b>
-
-Appointment booking system (multi-step with services, staff, date/time selection).
-
-Membership plans (purchase & details management).
-
-User panel (profile, services, memberships, account settings).
-
-Admin panel (manage staff, services, appointments, memberships, feedback).
-
-Integrated backend with PHP & MySQL to store and fetch real-time data.
-
-Ensured mobile and tablet responsiveness.
-
-Conducted testing and deployed the website to the server.<br>
-
-<b>Key Highlights:</b>
-
-Successfully delivered a complete salon website from scratch.
-
-Balanced both technical (backend, database, responsive design) and creative (UI/UX, smooth flows) aspects.
-
-Real-time collaboration with salon management team to finalize services, staff, and membership details.</p>
-            </div>
-            </div>
-
-            <div class="exp-item">
-            <div class="exp-head" data-toggle>
-                <div>
-                <h4>Website Takeover & Redesign</h4>
-                <small class="small" style="color:var(--muted)">Web Development</small>
-                </div>
-            </div>
-            <div class="exp-body">
-                <p Style="text-align: justify;"><b>Responsibilities:</b><br>
-
-Took over an incomplete website with no backend and partially done frontend.
-
-Redesigned the overall flow and improved the user interface for better usability.
-
-Modified existing layouts and designs to align with the updated requirements.
-
-Planned backend structure for smooth integration.
-
-Focused on making the design responsive across desktop, tablet, and mobile.<br>
-
-<b>Key Highlights:</b><br>
-
-Adapted quickly to a project handed over mid-way.
-
-Improved usability and design consistency.
-
-Set the foundation for future backend integration.</p>
-            </div>
-            </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+   
 
   <!-- PROJECTS -->
   <section id="projects" class="fade-up" style="padding-top:30px">
-    <h2>Projects</h2>
+    <h2 class="section-title"><center>PROJECTS</center></h2>
 
     <div class="projects-grid" id="projectsGrid">
       <!-- Project 1 -->
@@ -822,25 +703,20 @@ Set the foundation for future backend integration.</p>
 
   <!-- CONTACT / FOOTER -->
   <section id="contact" class="fade-up" style="padding-top:30px">
-    <h2>Contact</h2>
-    <p class="small" style="color:var(--muted)">Find me on LinkedIn or GitHub, or send a quick email.</p>
+   <h2 class="section-title"><center>GET IN TOUCH!</center></h2>
+    <p class="small" style="color:var(--muted)">I’m always open to discussing new projects, creative ideas, or opportunities.</p>
 
     <div class="socials">
-  <a href="https://www.linkedin.com/in/komal-anand-390b24269/" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
-  <a href="https://github.com/komal-3003" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-github"></i> GitHub
-  </a>
-  <a href="mailto:komalanand3003@gmail.com">
-    <i class="fas fa-envelope"></i> Email
-  </a>
-</div>
-
-
-    <footer>
-      <div class="small">© <span id="year"></span> Komal Anand. All rights reserved.</div>
-    </footer>
+      <a href="https://www.linkedin.com/in/komal-anand-390b24269/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/komal-3003" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="mailto:komalanand3003@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </div>
   </section>
 
 </main>
@@ -946,8 +822,6 @@ const repo = {
   }
   function closeModal(){ modal.style.display='none'; }
 
-  // fill year
-  document.getElementById('year').innerText = new Date().getFullYear();
 
   // fade-up on scroll
   const faders = document.querySelectorAll('.fade-up, .card, .proj, .exp-item');
@@ -997,18 +871,27 @@ const repo = {
 
 
 
-/*smooth scroll*/
+/* smooth scroll */
 document.querySelectorAll("a").forEach(a => {
   a.addEventListener("click", function(e) {
     const href = a.getAttribute("href");
-    if (href.startsWith("#")) {
+
+    // only handle internal section links like #about, #skills etc.
+    if (href.startsWith("#") && href.length > 1) {
       e.preventDefault();
-      // smooth scroll code...
+
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
     }
   });
 });
 
+
 </script>
 </body>
 </html>
-
